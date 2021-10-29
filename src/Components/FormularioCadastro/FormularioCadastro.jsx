@@ -22,8 +22,8 @@ function FormularioCadastro() {
         value={nome}
         onChange={(event) => {
           setNome(event.target.value);
-          if (nome.length >= 3) {
-            setNome(nome.substr(0, 3));
+          if (nome.length >= 4) {
+            setNome(nome.substr(0, 4));
           }
         }}
         id="nome"
