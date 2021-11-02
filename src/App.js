@@ -9,10 +9,16 @@ class App extends Component {
     return (
       <Container component="article" maxWidth="sm">
         <Typography variant="h3" align="center" component="h1">Formulário de cadastro</Typography>
-        <FormularioCadastro />
+        <FormularioCadastro 
+          enviar={enviarForm}
+        />
       </Container >
     );
   }
+}
+
+function enviarForm(props){
+  console.log(props);
 }
 
 export default App;
